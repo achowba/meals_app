@@ -12,10 +12,12 @@ class CategoryItem extends StatelessWidget {
     // method to navigate to another page
     void selectCategory(BuildContext ctx) {
         // Navigator needs a context, MaterialPageRoute needs a builder (which takes in a context)
-        Navigator.of(ctx).push(MaterialPageRoute(
-            builder: (_) {
-                return CategoryMealsScreen(id, title); // use the constructor to pass data to the next page
-            })
+        Navigator.of(ctx).pushNamed(
+            CategoryMealsScreen.routeName,
+            arguments: {
+                'id': id,
+                'title': title,
+            }
         );
     }
 
