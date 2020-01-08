@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './models/category.dart';
-import './models/meal.dart';
+import './../models/category.dart';
+import './../models/meal.dart';
 
 const DUMMY_CATEGORIES = const [
 	Category(
@@ -66,7 +66,8 @@ const DUMMY_MEALS = const [
 		title: 'Spaghetti with Tomato Sauce',
 		affordability: Affordability.Affordable,
 		complexity: Complexity.Simple,
-		imageUrl: 'https://7upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
+		// imageUrl: 'https://7upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
+		imageUrl: 'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=653&q=80',
 		duration: 20,
 		ingredients: [
 			'4 Tomatoes',

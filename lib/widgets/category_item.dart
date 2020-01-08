@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './category_meals_screen.dart';
+
+import './../screens/category_meals_screen.dart';
 
 class CategoryItem extends StatelessWidget {
 
@@ -14,7 +15,7 @@ class CategoryItem extends StatelessWidget {
         // Navigator needs a context, MaterialPageRoute needs a builder (which takes in a context)
         Navigator.of(ctx).pushNamed(
             CategoryMealsScreen.routeName,
-            arguments: {
+            arguments: { // pass data as arguments to the next page being routed
                 'id': id,
                 'title': title,
             }
