@@ -11,7 +11,7 @@ class TabsScreen extends StatefulWidget {
 class _TabsScreenState extends State<TabsScreen> {
     @override
     Widget build(BuildContext context) {
-        return DefaultTabController(
+        return DefaultTabController( // tab controller to contain the tabs and handle switching tabs
             length: 2,
             child: Scaffold(
                 appBar: AppBar(
@@ -33,7 +33,7 @@ class _TabsScreenState extends State<TabsScreen> {
                         ],
                     ),
                 ),
-                body: TabBarView(
+                body: TabBarView(// tab bar view holds the pages for each tab
                     children: <Widget>[
                         CategoriesScreen(),
                         FavouriteScreen(),
